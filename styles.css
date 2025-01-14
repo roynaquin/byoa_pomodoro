@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 2rem 0;
+}
+
+#minutes, #seconds {
+    display: inline-block;
+    min-width: 2ch;
+    text-align: center;
+}
+
+.controls {
+    margin: 1rem 0;
+}
+
+button {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#startButton {
+    background-color: #2ecc71;  /* Green */
+}
+
+#startButton:hover {
+    background-color: #27ae60;
+}
+
+#pauseButton {
+    background-color: #3498db;  /* Blue */
+}
+
+#pauseButton:hover {
+    background-color: #2980b9;
+}
+
+#resetButton {
+    background-color: #e74c3c;  /* Red */
+}
+
+#resetButton:hover {
+    background-color: #c0392b;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#mode {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 1rem;
+} 
